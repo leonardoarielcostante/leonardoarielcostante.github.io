@@ -1,0 +1,6 @@
+{
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairsHorizontal": "active",
+    "editor.guides.highlightActiveBracketPair": false,
+    "editor.guides.bracketPairs": "active"
+}
