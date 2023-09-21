@@ -1,0 +1,64 @@
+.nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 12px;
+  left: 0px;
+  z-index: 1;
+  font-size: 28px;
+  transition: all .2s;
+}
+
+.divNav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.lista {
+  display: flex;
+  width: 60%;
+  list-style: none;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.lista a {
+  text-decoration: none;
+  color: black;
+}
+
+.lista li:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: transform .1s;
+}
+
+.lista a:hover {
+  color: var(--dark);
+}
+
+.logo {
+  display: flex;
+  justify-items: start;
+}
+
+.scrollNav {
+  background-color: rgba(50, 50, 50, 0.8);
+  backdrop-filter: blur(16px);
+  top: 0;
+  height: 60px;
+  font-size: 22px;
+  transition: all 0.2s;
+}
+
+.scrollNav a {
+  color: var(--primary);
+}
+
+.scrollNav .lista a:hover{
+  color: white;
+}
+

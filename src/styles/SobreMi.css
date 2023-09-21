@@ -1,0 +1,155 @@
+.sobreMiSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.linea-tiempo {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 40%;
+  height: 60%;
+}
+
+.momento {
+  position: relative;
+  width: 45%;
+  box-sizing: border-box;
+}
+
+.descripcion {
+  font-weight: 700;
+  text-align: center ;
+}
+
+.momento:nth-child(even) {
+  left: 55%;
+}
+
+.linea-tiempo::before {
+  content: '';
+  position: absolute;
+  width: 3px;
+  background-color: #000;
+  left: 50%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.momento::after {
+  content: '';
+  position: absolute;
+  top: calc(50% + 10px);
+  right: calc(-11.11% - 11.5px);
+  height: 20px;
+  width: 20px;
+  background-color: #000;
+  border-radius: 50%;
+}
+
+.momento:nth-child(even)::after {
+  left: calc(-11.11% - 8.5px);
+}
+
+.momento h3 {
+  margin: 10px 0px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.momento .descripcion {
+  background-color: var(--primary);
+  border-radius: 10px;
+  padding: 10px;
+  line-height: 22px;
+  font-size: 20px;
+}
+
+.momento .descripcion::after {
+  content: '';
+  position: absolute;
+  right: -10px;
+  top: calc(50% + 10px);
+  height: 0;
+  width: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 12px solid var(--primary);
+}
+
+.momento:nth-child(even) .descripcion {
+  background-color: #3393FE;
+  color: white;
+}
+
+.momento:nth-child(even) .descripcion::after{
+  left: -10px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 12px solid #3393FE;
+  border-left: none;
+}
+
+.sobreMiTextos {
+  width: 50%;
+  font-size: 34px;
+}
+
+.cualidades {
+  font-weight: 700;
+}
+
+.momentoTexto {
+  position: absolute;
+  top: 90px;
+  background-color: var(--primary);
+  padding: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+  font-size: 28px;
+}
+
+@media (max-width: 1366px) {
+  .sobreMiTextos {
+    font-size: 24px;
+  }
+
+
+  .momentoTexto {
+    font-size: 16px;
+  }
+
+  .momento .descripcion {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sobreMiSection {
+    padding: 25px 0px;
+    flex-direction: column;
+  }
+
+  .linea-tiempo {
+    width: 80%;
+  }
+
+  .sobreMiTextos {
+    width: 80%;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .linea-tiempo::before {
+    left: 80%
+  }
+
+  .momento {
+    width: 72%;
+  }
+
+}
