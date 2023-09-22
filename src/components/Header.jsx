@@ -24,7 +24,7 @@ function Presentacion () {
           <a href='https://drive.google.com/file/d/1GNUvaTqkDWj0De8TFpyeKSaBVgiQ_URy/view?usp=drive_link' target='_blank' rel='noreferrer' className='descargarCv'>Descargar Cv</a>
         </div>
         <div>
-          <img className='imgHeader' src="./src/img/foto.png" />
+          <img className='imgHeader' src="./src/images/foto.png" />
         </div>
       </div>
     </section>

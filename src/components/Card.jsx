@@ -4,7 +4,7 @@ import '../styles/Card.css'
 function Card ({ foto, titulo, pagina, iconos }) {
   return (
     <a className='aCard' target='_blank' rel="noreferrer" href={`https://leonardoarielcostante.github.io/${pagina}`}>
-      <img className='cardImg' src={`./src/img/${foto}`} alt={foto} />
+      <img className='cardImg' src={`./src/images/${foto}`} alt={foto} />
       <div className='cardContenido'>
         <p>{titulo}</p>
         <div className='iconosCard'>

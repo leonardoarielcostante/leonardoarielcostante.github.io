@@ -22,7 +22,7 @@ export default function Nav () {
   return (
     <nav className='nav'>
       <label className="logo">
-        <img width='100' src="./src/img/Logo.png" />
+        <img width='100' src="./src/images/Logo.png" />
       </label>
     <div className='divNav'>
       <ul className='lista'>

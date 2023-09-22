@@ -17,7 +17,7 @@ function NavResponsive () {
       <button onClick={() => setIsOpen(!isOpen)}><BsList /></button>
       <div className={`responsiveDivNav ${isOpen ? 'open' : ''}`}>
           <label className="responsiveLogo">
-            <img width='100' src="./src/img/Logo.png" />
+            <img width='100' src="./src/images/Logo.png" />
           </label>
         <div className='responsiveDivLista'>
           <ul className='responsiveLista'>
