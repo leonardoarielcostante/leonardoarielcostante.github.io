@@ -2,11 +2,11 @@ import PropTypes from "prop-types";
 
 const MyButton = ({ text, className }) => {
   return (
-    <button
-      className={`w-full rounded-lg border py-2 transition-all ${className}`}
+    <a
+      className={`block w-full rounded-lg border py-2 text-center transition-all ${className}`}
     >
       {text}
-    </button>
+    </a>
   );
 };
 

@@ -3,9 +3,9 @@ import { FiLinkedin, FiGithub } from "react-icons/fi";
 
 const Nav = () => {
   return (
-    <aside className="top-0 flex h-screen w-1/4 flex-col justify-between shadow shadow-black">
-      <nav className="w-full pl-6">
-        <p className="py-5 text-2xl font-bold">Leonardo Costante</p>
+    <aside className="sticky left-0 top-0 flex max-h-screen w-80 flex-col justify-between shadow shadow-black">
+      <nav className="w-full px-6">
+        <p className="py-5 text-3xl font-bold">Leonardo Costante</p>
         <ul className="flex flex-col space-y-1 font-light">
           <li>
             <a href="#" className="underline-offset-4 hover:underline">
