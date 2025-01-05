@@ -1,9 +1,10 @@
 import PropTypes from "prop-types";
 
-const MyButton = ({ text, className }) => {
+const MyButton = ({ text, className, link }) => {
   return (
     <a
-      className={`block w-full rounded-lg border py-2 text-center transition-all ${className}`}
+      href={link}
+      className={`block cursor-pointer rounded-lg border py-2 text-center transition-all ${className}`}
     >
       {text}
     </a>
@@ -13,6 +14,7 @@ const MyButton = ({ text, className }) => {
 MyButton.propTypes = {
   text: PropTypes.string.isRequired,
   className: PropTypes.string,
+  link: PropTypes.string,
 };
 
 export default MyButton;

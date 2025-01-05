@@ -13,12 +13,12 @@ const Experience = () => {
   ];
 
   return (
-    <section className="flex flex-col p-10">
-      <h2 className="pb-5 text-4xl font-bold">💼 Experiencia</h2>
+    <section className="flex h-screen flex-col p-10">
+      <h2 className="pb-5 text-4xl font-bold 2xl:text-5xl">💼 Experiencia</h2>
       <div className="flex flex-col items-center justify-center space-y-3">
         <Card
           title="Automation Specialist"
-          company="Sista SA. 2020 - Act"
+          company="Sista SA. | 2020 - Act"
           responsibilities={SISTA}
         />
         <Card

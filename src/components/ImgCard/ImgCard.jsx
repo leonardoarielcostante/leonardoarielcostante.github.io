@@ -3,26 +3,28 @@ import { MyButton } from "../MyButton";
 
 const ImgCard = ({ title, description, image, technologies }) => {
   return (
-    <div className="mx-auto w-full max-w-80 rounded-lg">
+    <div className="h-full w-full rounded-lg">
       <img
         src={image}
         alt={image}
-        className="h-64 w-full rounded-t-lg object-cover"
+        className="h-60 w-full rounded-t-lg object-cover"
       />
-      <div className="max-w-80 space-y-3 rounded-b-lg border-b border-l border-r p-3">
+      <div className="space-y-4 rounded-b-lg border-b border-l border-r p-3">
         <h3 className="text-2xl font-bold">{title}</h3>
-        <p className="text-sm text-gray-500">{description}</p>
-        <div className="space-x-2 space-y-2">
+        <p className="h-32 text-sm text-gray-500 lg:h-40 xl:h-44 2xl:text-base">
+          {description}
+        </p>
+        <div className="mb-1 flex h-12 flex-wrap gap-2">
           {technologies.map((e, index) => (
             <span
               key={index}
-              className="rounded-xl bg-gray-200 px-2 py-1 text-xs font-bold"
+              className="h-fit rounded-xl bg-gray-200 px-2 py-1 text-xs font-bold 2xl:text-base"
             >
               {e}
             </span>
           ))}
         </div>
-        <div className="flex w-full justify-end">
+        <div className="flex h-full w-full items-end justify-end">
           <MyButton text="Ver" className={"w-16 py-1 hover:bg-gray-100"} />
         </div>
       </div>
