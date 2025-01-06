@@ -1,4 +1,5 @@
 import ImgCard from "../ImgCard/ImgCard";
+import { FiCheckSquare } from "react-icons/fi";
 
 const Projects = () => {
   const ecommerce = ["React", "TypeScript", "TailWind"];
@@ -7,8 +8,11 @@ const Projects = () => {
 
   return (
     <section className="flex h-screen flex-col p-10">
-      <h2 className="pb-5 text-4xl font-bold 2xl:text-5xl">✅ Proyectos</h2>
-      <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+      <h2 className="flex pb-5 text-4xl font-bold 2xl:text-5xl">
+        <FiCheckSquare />
+        &nbsp;Proyectos
+      </h2>
+      <div className="grid gap-6 lg:grid-cols-2 xl:grid-cols-3">
         <ImgCard
           title="E-commerce profesional"
           description="E-commerce web, SPA, 100% responsive. Modelo minimalista con lista de productos y carrito funcional, utilizando Fake Store API."

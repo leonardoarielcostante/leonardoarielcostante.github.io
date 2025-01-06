@@ -1,30 +1,53 @@
 import { MyButton } from "../MyButton";
-import { FiLinkedin, FiGithub } from "react-icons/fi";
+import {
+  FiLinkedin,
+  FiGithub,
+  FiCheckSquare,
+  FiBriefcase,
+  FiUser,
+  FiTerminal,
+} from "react-icons/fi";
 
 const Nav = () => {
   return (
-    <aside className="sticky left-0 top-0 flex max-h-screen w-1/4 flex-col justify-between shadow shadow-black">
+    <aside className="sticky left-0 top-0 flex max-h-screen w-1/4 min-w-36 flex-col justify-between shadow shadow-black">
       <nav className="w-full px-6">
-        <p className="py-5 text-3xl font-bold">Leonardo Costante</p>
-        <ul className="flex flex-col space-y-1 font-light 2xl:text-xl">
+        <p className="py-5 text-xl font-bold xl:text-3xl">Leonardo Costante</p>
+        <ul className="flex flex-col space-y-1 font-light xl:text-xl">
           <li>
-            <a href="#" className="underline-offset-4 hover:underline">
-              Inicio
+            <a
+              href="#"
+              className="flex w-fit items-center rounded-full p-2 hover:bg-gray-200"
+            >
+              <FiTerminal />
+              &nbsp;Inicio
             </a>
           </li>
           <li>
-            <a href="#" className="underline-offset-4 hover:underline">
-              Experiencia
+            <a
+              href="#"
+              className="flex w-fit items-center rounded-full p-2 hover:bg-gray-200"
+            >
+              <FiBriefcase />
+              &nbsp;Experiencia
             </a>
           </li>
           <li>
-            <a href="#" className="underline-offset-4 hover:underline">
-              Proyectos
+            <a
+              href="#"
+              className="flex w-fit items-center rounded-full p-2 hover:bg-gray-200"
+            >
+              <FiCheckSquare />
+              &nbsp;Proyectos
             </a>
           </li>
           <li>
-            <a href="#" className="underline-offset-4 hover:underline">
-              Sobre mi
+            <a
+              href="#"
+              className="flex w-fit items-center rounded-full p-2 hover:bg-gray-200"
+            >
+              <FiUser />
+              &nbsp;Sobre mi
             </a>
           </li>
         </ul>

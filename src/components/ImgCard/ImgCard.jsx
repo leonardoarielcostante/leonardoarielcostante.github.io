@@ -10,7 +10,7 @@ const ImgCard = ({ title, description, image, technologies }) => {
         className="h-60 w-full rounded-t-lg object-cover"
       />
       <div className="space-y-4 rounded-b-lg border-b border-l border-r p-3">
-        <h3 className="text-2xl font-bold">{title}</h3>
+        <h3 className="text-xl font-bold 2xl:text-2xl">{title}</h3>
         <p className="h-32 text-sm text-gray-500 lg:h-40 xl:h-44 2xl:text-base">
           {description}
         </p>

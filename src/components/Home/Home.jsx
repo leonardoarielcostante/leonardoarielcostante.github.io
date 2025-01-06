@@ -5,9 +5,9 @@ const Home = () => {
         <img
           src="/images/foto.webp"
           alt="Leonardo Costante"
-          className="h-24 w-24 rounded-full object-fill"
+          className="h-20 w-20 rounded-full object-fill xl:h-24 xl:w-24"
         />
-        <p className="text-7xl font-bold">
+        <p className="text-5xl font-bold 2xl:text-7xl">
           ¡Hola! soy <span className="text-blue-500">Leo</span>
           <br />
           desarrollador

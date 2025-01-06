@@ -1,4 +1,5 @@
 import Card from "../Card/Card";
+import { FiBriefcase } from "react-icons/fi";
 
 const Experience = () => {
   const JRC = [
@@ -14,7 +15,10 @@ const Experience = () => {
 
   return (
     <section className="flex h-screen flex-col p-10">
-      <h2 className="pb-5 text-4xl font-bold 2xl:text-5xl">💼 Experiencia</h2>
+      <h2 className="flex pb-5 text-4xl font-bold 2xl:text-5xl">
+        <FiBriefcase />
+        &nbsp;Experiencia
+      </h2>
       <div className="flex flex-col items-center justify-center space-y-3">
         <Card
           title="Automation Specialist"
