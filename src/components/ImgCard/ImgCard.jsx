@@ -41,7 +41,7 @@ ImgCard.propTypes = {
   description: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
   technologies: PropTypes.array.isRequired,
-  link: PropTypes.array,
+  link: PropTypes.string,
 };
 
 export default ImgCard;
