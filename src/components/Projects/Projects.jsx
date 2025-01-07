@@ -18,18 +18,21 @@ const Projects = () => {
           description="E-commerce web, SPA, 100% responsive. Modelo minimalista con lista de productos y carrito funcional utilizando Fake Store API."
           image="./images/ecommerce.webp"
           technologies={ecommerce}
+          link={"https://leonardoarielcostante.github.io/e-commerce/"}
         />
         <ImgCard
           title="Landing Page"
           description="Landing page con diseño profesional responsive, con ofrecimiento de planes y recomendaciones."
           image="./images/landing.webp"
           technologies={landing}
+          link={"https://leonardoarielcostante.github.io/professionalpage/"}
         />
         <ImgCard
           title="Tareitas"
           description="App FullStack de gestión de tareas, destaca por calcular el tiempo que debes dedicar a cada tarea diariamente según la fecha de finalización que desees, lo calcula igualmente si olvidas realizar la tarea diaria, también permite modificar tiempos anteriores."
           image="./images/tareitas.webp"
           technologies={tareitas}
+          link={"https://tareitasapp.vercel.app/"}
         />
       </div>
     </section>

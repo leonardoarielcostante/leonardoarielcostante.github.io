@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import { MyButton } from "../MyButton";
 
-const ImgCard = ({ title, description, image, technologies }) => {
+const ImgCard = ({ title, description, image, technologies, link }) => {
   return (
     <div className="h-full w-full rounded-lg">
       <img
@@ -25,7 +25,11 @@ const ImgCard = ({ title, description, image, technologies }) => {
           ))}
         </div>
         <div className="flex h-full w-full items-end justify-end">
-          <MyButton text="Ver" className={"w-16 py-1 hover:bg-gray-100"} />
+          <MyButton
+            text="Ver"
+            className={"w-16 py-1 hover:bg-gray-100"}
+            link={link}
+          />
         </div>
       </div>
     </div>
@@ -37,6 +41,7 @@ ImgCard.propTypes = {
   description: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
   technologies: PropTypes.array.isRequired,
+  link: PropTypes.array,
 };
 
 export default ImgCard;
