@@ -8,14 +8,14 @@ const Experience = () => {
     "Algunas tecnologías utilizadas son Angular, Ionic y RxDb.",
   ];
   const SISTA = [
-    "Desarrollo de scripts para carga y obtencion de datos en sistemas tercerizados.",
-    "Desarrollo de script con puppeteer para la obtencion de datos y generacion de reportes diarios.",
-    "Desarrollo de consultas SQL en base de datos para importar informacion a un nuevo sistema.",
+    "Desarrollo de scripts para carga y obtención de datos en sistemas tercerizados.",
+    "Desarrollo de script con puppeteer para la obtención de datos y generación de reportes diarios.",
+    "Desarrollo de consultas SQL en base de datos para importar información a un nuevo sistema.",
   ];
 
   return (
-    <section className="flex h-screen flex-col p-10">
-      <h2 className="flex pb-5 text-4xl font-bold 2xl:text-5xl">
+    <section id="experience" className="flex h-fit flex-col p-10">
+      <h2 className="flex pb-5 text-2xl font-bold md:text-4xl 2xl:text-5xl">
         <FiBriefcase />
         &nbsp;Experiencia
       </h2>

@@ -10,58 +10,73 @@ import {
 
 const Nav = () => {
   return (
-    <aside className="sticky left-0 top-0 flex max-h-screen w-1/4 min-w-36 flex-col justify-between shadow shadow-black">
-      <nav className="w-full px-6">
-        <p className="py-5 text-xl font-bold xl:text-3xl">Leonardo Costante</p>
+    <aside className="sticky left-0 top-0 flex max-h-screen w-12 flex-col justify-between shadow shadow-black transition-all ease-in-out md:w-1/4">
+      <nav className="flex w-full justify-center pt-2 md:block md:px-6">
+        <p className="hidden py-5 text-xl font-bold md:block xl:text-3xl">
+          Leonardo Costante
+        </p>
         <ul className="flex flex-col space-y-1 font-light xl:text-xl">
           <li>
             <a
-              href="#"
-              className="flex w-fit items-center rounded-full p-2 hover:bg-gray-200"
+              href="#home"
+              className="flex w-fit items-center justify-center rounded-full p-2 hover:bg-gray-200"
             >
               <FiTerminal />
-              &nbsp;Inicio
+              <span className="hidden md:block">&nbsp;Inicio</span>
             </a>
           </li>
           <li>
             <a
-              href="#"
-              className="flex w-fit items-center rounded-full p-2 hover:bg-gray-200"
+              href="#experience"
+              className="flex w-fit items-center justify-center rounded-full p-2 hover:bg-gray-200"
             >
               <FiBriefcase />
-              &nbsp;Experiencia
+              <span className="hidden md:block">&nbsp;Experiencia</span>
             </a>
           </li>
           <li>
             <a
-              href="#"
-              className="flex w-fit items-center rounded-full p-2 hover:bg-gray-200"
+              href="#projects"
+              className="flex w-fit items-center justify-center rounded-full p-2 hover:bg-gray-200"
             >
               <FiCheckSquare />
-              &nbsp;Proyectos
+              <span className="hidden md:block">&nbsp;Proyectos</span>
             </a>
           </li>
           <li>
             <a
-              href="#"
-              className="flex w-fit items-center rounded-full p-2 hover:bg-gray-200"
+              href="#aboutme"
+              className="flex w-fit items-center justify-center rounded-full p-2 hover:bg-gray-200"
             >
               <FiUser />
-              &nbsp;Sobre mi
+              <span className="hidden md:block">&nbsp;Sobre mi</span>
             </a>
           </li>
         </ul>
       </nav>
-      <footer className="m-6 space-y-2 pb-2">
+      <footer className="space-y-2 p-1 pb-2 md:m-6">
         <MyButton
           text={"Descargar CV"}
-          className={"hover:bg-gray-100 2xl:text-xl"}
+          link={
+            "https://drive.google.com/file/d/1s38xTuSV2jWSkNYky6V9e-kcvlWzu7Ux/view?usp=drive_link"
+          }
+          className={"hidden hover:bg-gray-100 md:block 2xl:text-xl"}
         />
-        <div className="xl flex justify-center space-x-2 text-xl 2xl:text-2xl">
-          <a href="#">
+        <MyButton
+          link={
+            "https://drive.google.com/file/d/1s38xTuSV2jWSkNYky6V9e-kcvlWzu7Ux/view?usp=drive_link"
+          }
+          text={"CV"}
+          className={"m-0 py-0 text-sm hover:bg-gray-100 md:hidden 2xl:text-xl"}
+        />
+        <div className="flex flex-col items-center justify-center space-y-2 text-xl md:flex md:flex-row md:space-x-2 md:space-y-0 2xl:text-2xl">
+          <a
+            href="https://www.linkedin.com/in/leonardo-ariel-costante/"
+            target="_blank"
+          >
             <FiLinkedin />
           </a>
-          <a href="#">
+          <a href="https://github.com/leonardoarielcostante" target="_blank">
             <FiGithub />
           </a>
         </div>

@@ -4,10 +4,12 @@ const Card = ({ title, company, responsibilities }) => {
   return (
     <div className="w-full rounded-lg border p-5">
       <div className="pb-4">
-        <h3 className="text-2xl font-bold 2xl:text-3xl">{title}</h3>
-        <p className="text-sm text-gray-500 2xl:text-lg">{company}</p>
+        <h3 className="text-xl font-bold md:text-2xl 2xl:text-3xl">{title}</h3>
+        <p className="text-xs text-gray-500 md:text-sm 2xl:text-lg">
+          {company}
+        </p>
       </div>
-      <ul className="list-disc space-y-2 pl-5 2xl:text-xl">
+      <ul className="list-disc space-y-2 pl-5 text-sm md:text-base 2xl:text-xl">
         {responsibilities.map((e, index) => (
           <li key={index}>{e}</li>
         ))}
