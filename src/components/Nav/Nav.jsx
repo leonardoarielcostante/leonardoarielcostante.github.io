@@ -58,13 +58,13 @@ const Nav = () => {
         <MyButton
           text={"Descargar CV"}
           link={
-            "https://drive.google.com/file/d/1UjItX1NRUTk0Pib_z7VREZVqswTbawSu/view?usp=sharing"
+            "https://drive.google.com/file/d/1zXGN5DEkpVsOKI06tMnv3FGg3T52_NzP/view?usp=drive_link"
           }
           className={"hidden hover:bg-gray-100 md:block 2xl:text-xl"}
         />
         <MyButton
           link={
-            "https://drive.google.com/file/d/1UjItX1NRUTk0Pib_z7VREZVqswTbawSu/view?usp=sharing"
+            "https://drive.google.com/file/d/1zXGN5DEkpVsOKI06tMnv3FGg3T52_NzP/view?usp=drive_link"
           }
           text={"CV"}
           className={"m-0 py-0 text-sm hover:bg-gray-100 md:hidden 2xl:text-xl"}
