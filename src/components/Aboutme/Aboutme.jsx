@@ -2,7 +2,10 @@ import { FiUser } from "react-icons/fi";
 
 const Aboutme = () => {
   return (
-    <section id="aboutme" className="flex h-fit flex-col p-10 text-sm">
+    <section
+      id="aboutme"
+      className="flex h-fit flex-col p-10 text-sm md:text-xl"
+    >
       <h2 className="flex pb-5 text-2xl font-bold md:text-4xl 2xl:text-5xl">
         <FiUser />
         &nbsp;Sobre mi
