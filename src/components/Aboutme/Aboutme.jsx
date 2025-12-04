@@ -7,7 +7,7 @@ const Aboutme = () => {
         <FiUser />
         &nbsp;Sobre mi
       </h2>
-      <p>
+      <p className="text-lg 2xl:text-xl">
         Soy un desarrollador fullstack proactivo y autodidacta, con una sólida
         experiencia en el desarrollo de aplicaciones web utilizando tecnologías
         como React, Angular, Express y MySQL. Mi enfoque se centra en la

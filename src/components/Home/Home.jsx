@@ -16,7 +16,7 @@ const Home = () => {
           desarrollador
           <span className="text-red-500"> Full&nbsp;stack</span>
           <br />
-          <span className="text-green-600">+2 años</span> de experiencia.
+          <span className="text-green-600">+3 años</span> de experiencia.
         </p>
         <p className="text-end text-sm text-gray-500 md:text-base 2xl:text-2xl">
           Desarrollando soluciones completas, eficientes y escalables.

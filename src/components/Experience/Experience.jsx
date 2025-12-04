@@ -8,9 +8,16 @@ const Experience = () => {
     "Algunas tecnologías utilizadas son Angular, Ionic y RxDb.",
   ];
   const SISTA = [
+    "Diseño e implementación de flujos automatizados en n8n, integrando llamadas a APIs externas y modelos de IA.",
     "Desarrollo de scripts para carga y obtención de datos en sistemas tercerizados.",
     "Desarrollo de script con puppeteer para la obtención de datos y generación de reportes diarios.",
     "Desarrollo de consultas SQL en base de datos para importar información a un nuevo sistema.",
+  ];
+
+  const ZIRKEL = [
+    "Desarrollo en curso de un sistema de monetización para una herramienta online, incluyendo gestión de usuarios, pagos y acceso a contenido.",
+    "Creación de landing pages, sistemas de registro y login, y mantenimiento integral de sitios web.",
+    "Utilizando ThreeJs se desarrolló un sistema con videos e imágenes para realizar presentaciones con la posibilidad de ingresar en diferentes salas.",
   ];
 
   return (
@@ -20,6 +27,11 @@ const Experience = () => {
         &nbsp;Experiencia
       </h2>
       <div className="flex flex-col items-center justify-center space-y-3">
+        <Card
+          title="FullStack Developer"
+          company="Zirkel | 2025 - Act"
+          responsibilities={ZIRKEL}
+        />
         <Card
           title="Automation Specialist"
           company="Sista SA. | 2020 - Act"
