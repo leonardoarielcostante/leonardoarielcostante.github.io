@@ -58,7 +58,7 @@ const Nav = () => {
         <MyButton
           text={"Descargar CV"}
           link={
-            "https://drive.google.com/file/d/1zXGN5DEkpVsOKI06tMnv3FGg3T52_NzP/view?usp=drive_link"
+            "https://drive.google.com/file/d/1xJVo9dhciyWiQa8wl-N7tw_OxtHpNqXA/view?usp=sharing"
           }
           className={"hidden hover:bg-gray-100 md:block 2xl:text-xl"}
         />
