@@ -2,16 +2,16 @@ import Card from "../Card/Card";
 import { FiBriefcase } from "react-icons/fi";
 
 const Experience = () => {
-  const JRC = [
-    "Desarrollo y mantenimiento de nuevas funcionalidades en una aplicación web y móvil de gestión de inventario.",
-    "Desarrollo y mantenimiento de una aplicación para la gestión de portafolios.",
-    "Algunas tecnologías utilizadas son Angular, Ionic y RxDb.",
-  ];
   const SISTA = [
     "Diseño e implementación de flujos automatizados en n8n, integrando llamadas a APIs externas y modelos de IA.",
     "Desarrollo de scripts para carga y obtención de datos en sistemas tercerizados.",
     "Desarrollo de script con puppeteer para la obtención de datos y generación de reportes diarios.",
     "Desarrollo de consultas SQL en base de datos para importar información a un nuevo sistema.",
+  ];
+  const JRC = [
+    "Desarrollo y mantenimiento de nuevas funcionalidades en una aplicación web y móvil de gestión de inventario.",
+    "Desarrollo y mantenimiento de una aplicación para la gestión de portafolios.",
+    "Algunas tecnologías utilizadas son Angular, Ionic y RxDb.",
   ];
 
   const ZIRKEL = [
@@ -28,14 +28,14 @@ const Experience = () => {
       </h2>
       <div className="flex flex-col items-center justify-center space-y-3">
         <Card
-          title="FullStack Developer"
-          company="Zirkel | 2025 - Act"
-          responsibilities={ZIRKEL}
-        />
-        <Card
           title="Automation Specialist"
           company="Sista SA. | 2020 - Act"
           responsibilities={SISTA}
+        />
+        <Card
+          title="FullStack Developer"
+          company="Zirkel | 2025 - 2026"
+          responsibilities={ZIRKEL}
         />
         <Card
           title="FullStack Developer"
